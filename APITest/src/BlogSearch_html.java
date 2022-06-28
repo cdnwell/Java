@@ -17,25 +17,17 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class BlogSearch_html {
+	
 	public static void writeHTML(ArrayList<String> list,String fileName) {
+		
 		byte[] encode;
 		try {
 			encode = Files.readAllBytes(Paths.get("template.html"));
 			String tag = new String(encode,"UTF-8");
-//			System.out.println(tag);
 			String table = "<table><tr><th>블로그명</th><th>작성일</th><th>글제목</th><th>링크</th></tr>";
 			for(String row : list) {
 				String cell[] = row.split("\t");
 				table += "<tr>";
-//				for(String s : cell) {
-//					String tmp = s.substring(0, 5);
-//					if(!tmp.equals("https")) {
-//						table += "<td>"+s+"</td>";
-//					}else {
-//						table += "<td><a href=\""+s+"\">"+s+"</a></td>";
-//					}
-//
-//				}
 				
 				for(int i=0;i<cell.length-1;i++) {
 					table += "<td>" + cell[i] + "</td>";
@@ -45,7 +37,6 @@ public class BlogSearch_html {
 			}
 			table += "</table>";
 			tag = tag.replace("{result}", table);
-//			System.out.println(tag);
 			
 			FileWriter fw = new FileWriter(fileName+".html");
 			fw.write(tag);
@@ -55,7 +46,9 @@ public class BlogSearch_html {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
+	
 	public static ArrayList<String> blogSearch(String text) {
 		String clientId = "_1rIIr0u6hwdD4VpqYnd";
         String clientSecret = "k5ERzutCdQ";
@@ -90,8 +83,6 @@ public class BlogSearch_html {
 				msg += str;
 			}
 			
-//			System.out.println(msg);
-			
 			JSONObject json = new JSONObject(msg);
 			JSONArray arr = json.getJSONArray("items");
 			for(int i=0;i<arr.length();i++) {
@@ -109,6 +100,7 @@ public class BlogSearch_html {
 		}
         return result;
 	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String text = sc.nextLine();
@@ -119,5 +111,4 @@ public class BlogSearch_html {
         writeHTML(list,text);
     }
 
-  
 }

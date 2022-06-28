@@ -26,6 +26,7 @@ public class FileWriteMain {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
+			// 4. 스트림 닫아주기
 			try {
 				if(pw != null) pw.close();
 				if(fw != null) fw.close();
@@ -33,14 +34,6 @@ public class FileWriteMain {
 				e.printStackTrace();
 			}
 		}
-		
-		
-		
-		
-		// 4. 스트림 닫기
-		// * 모든 스트림 패턴
-		
-		
 		
 	}
 

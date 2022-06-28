@@ -15,7 +15,7 @@ public class FileReadJson {
 		// 스트림은 항상 노드 스트림 부터 만들어 줘야 한다.
 		FileReader fr = null;
 		BufferedReader br = null;
-		String jsonBox = "";
+		String jsonBox = new String();
 		
 		try {
 			fr = new FileReader(file);

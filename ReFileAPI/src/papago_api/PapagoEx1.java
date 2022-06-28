@@ -22,6 +22,12 @@ public class PapagoEx1 {
         String apiURL = "https://openapi.naver.com/v1/papago/n2mt";
         HttpURLConnection con = null;
         
+//        try {
+//            text = URLEncoder.encode("안녕하세요. 오늘 기분은 어떻습니까?", "UTF-8");
+//        } catch (UnsupportedEncodingException e) {
+//            throw new RuntimeException("인코딩 실패", e);
+//        }
+        
         Map<String, String> requestHeaders = new HashMap<>();
         requestHeaders.put("X-Naver-Client-Id", clientId);
         requestHeaders.put("X-Naver-Client-Secret", clientSecret);
@@ -46,6 +52,7 @@ public class PapagoEx1 {
                 int responseCode = con.getResponseCode();
                 
                 if (responseCode == HttpURLConnection.HTTP_OK) { // 정상 응답
+                //
 	                InputStreamReader streamReader = new InputStreamReader(con.getInputStream());
 	
 	                try (BufferedReader lineReader = new BufferedReader(streamReader)) {
@@ -62,7 +69,9 @@ public class PapagoEx1 {
 	                } catch (IOException e) {
 	                    throw new RuntimeException("API 응답을 읽는데 실패했습니다.", e);
 	                }
+                //
                 } else {
+	            	//
 	                InputStreamReader streamReader = new InputStreamReader(con.getInputStream());
 	
 	                try (BufferedReader lineReader = new BufferedReader(streamReader)) {
@@ -79,6 +88,7 @@ public class PapagoEx1 {
 	                } catch (IOException e) {
 	                    throw new RuntimeException("API 응답을 읽는데 실패했습니다.", e);
 	                }
+	                //
                 }
                 
             } catch (IOException e) {

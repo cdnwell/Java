@@ -26,22 +26,22 @@ public class FileReadMain {
 				if( s == null)
 					break;
 				System.out.println(s);
-				
 			}
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
 			try {
+				// 4. 스트림 닫기
+				// json, xml 풀어서 자료에 접근하는 것 문제에 나옴
 				if(br != null) br.close();
 				if(fr != null) fr.close();
 			}catch(IOException e) {
 				e.printStackTrace();
 			}
 		}
-		// 4. 스트림 닫기
-		// json, xml 풀어서 자료에 접근하는 것 문제에 나옴
 		
 		
 	}
