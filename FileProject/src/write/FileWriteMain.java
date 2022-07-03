@@ -6,7 +6,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class FileWriteMain {
-
+	/*
+	 *  1. File 객체 생성, 경로는 상대경로, 만들 텍스트의 이름 매개변수에 입력(String)
+	 *  2. FileWriter, PrintWriter
+	 *  3. pw.println(str)
+	 *  4. try catch finally 마무리 
+	 */
 	public static void main(String[] args) {
 		// 1. 파일 열기
 		File file = new File("write.txt");
