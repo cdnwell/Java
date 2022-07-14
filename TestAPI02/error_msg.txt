@@ -1,0 +1,4 @@
+java.io.UnsupportedEncodingException
+	at APIs.BlogSearch.searchBlog(BlogSearch.java:59)
+	at APIs.BlogSearch.main(BlogSearch.java:142)
+

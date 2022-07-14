@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ImportExportAction">
-		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ZipFile"/>
 		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
@@ -21,6 +21,8 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\cdnwe\Downloads\시험 압축 파일\fileconvert[파일만]"/>
+			<item value="C:\Users\cdnwe\Downloads"/>
 			<item value="C:\Users\cdnwe\OneDrive\문서\카카오톡 받은 파일"/>
 		</list>
 	</section>
@@ -28,6 +30,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\cdnwe\OneDrive\문서\java 압축파일\naverpapagomain.zip"/>
 			<item value="C:\Users\cdnwe\OneDrive\문서\공부 파일 저장소\papagoSearch.zip"/>
 			<item value="C:\Users\cdnwe\OneDrive\문서\공부 파일 저장소\blogSearch.zip"/>
 			<item value="C:\Users\cdnwe\OneDrive\문서\공부 파일 저장소\blogSerach.zip"/>
@@ -40,6 +43,7 @@
 	<section name="ZipFileImportWizard">
 		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\cdnwe\OneDrive\문서\java 압축파일\naverpapagomain.zip"/>
 			<item value="C:\Users\cdnwe\OneDrive\문서\공부 파일 저장소\blogSearch.zip"/>
 			<item value="C:\Users\cdnwe\OneDrive\문서\공부 파일 저장소\papagoSearch.zip"/>
 			<item value="C:\Users\cdnwe\OneDrive\문서\공부 파일 저장소\blogSerach.zip"/>

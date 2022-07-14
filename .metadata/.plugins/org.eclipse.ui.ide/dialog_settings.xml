@@ -2,11 +2,12 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\cdnwe\OneDrive\바탕 화면\[학원 자료]\JSP 폴더\요일별 강의 파일\7.4 월 jsp\jstl"/>
 			<item value="C:\Users\cdnwe\OneDrive\바탕 화면\[학원 자료]\JSP 폴더\요일별 강의 파일\6.30 목 jsp\Step02"/>
 			<item value="C:\Users\cdnwe\OneDrive\바탕 화면\Java\ReFileAPI"/>
 			<item value="C:\Users\cdnwe\OneDrive\바탕 화면\Java\FileProject"/>
